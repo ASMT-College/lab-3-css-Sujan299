@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-size: xx-large;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mid{
+    height: 80vh;
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mid div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem 0 5rem;
+}
+.left{
+    color: yellow;
+}
+.right{
+    color: indigo;
+}
+.body{
+    color: red;
+}
+.header,.footer{
+    height: 20vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 567px){
+    .mid div{
+        margin: 0 3.4rem 0 3.4rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .mid div{
+        margin: 0 2.5rem 0 2.5rem;
+    }
+}
